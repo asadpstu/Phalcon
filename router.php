@@ -58,4 +58,15 @@ $router->add('/pdf-generate',['controller'=>'account','action'=>'pdfgenerate']);
 $router->add('/subscription',['controller'=>'account','action'=>'subscription']);
 
 
+//Content file-view page
+$router->add('/content',['controller'=>'account','action'=>'content']);
+
+//Content add category
+$router->add('/add-category',['controller'=>'account','action'=>'addcategory']);
+
+//Content add product
+$router->add('/add-product',['controller'=>'account','action'=>'addproduct']);
+
+
+
 $router->handle();
