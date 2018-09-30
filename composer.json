@@ -1,0 +1,15 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0",
+        "mikehaertl/phpwkhtmltopdf": "^2.3",
+        "jwage/easy-csv": "^0.0.6",
+        "mpdf/mpdf": "^7.1",
+        "igorsantos07/phalcon-queue-db": "^0.9.8",
+        "duythien/cashier": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "mikehaertl\\wkhtmlto\\": "src/"
+        }
+    }
+}
