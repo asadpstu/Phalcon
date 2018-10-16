@@ -5,6 +5,7 @@
  */
 class ErrorController extends \Phalcon\Mvc\Controller
 {
+	//If url not found
     public function show404Action()
     {
         $this->response->setStatusCode(404, 'Not Found');

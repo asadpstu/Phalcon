@@ -2,7 +2,7 @@
 use Phalcon\Paginator\Adapter\Model as PaginatorModel;
 class IndexController extends ControllerBase
 {
-
+    //base function
     public function indexAction()
     {
     
@@ -30,7 +30,7 @@ class IndexController extends ControllerBase
    
     }
 
-
+//Details about product
 public function detailsAction()
 {
     //For getting current page for pagination
@@ -132,7 +132,7 @@ $proid = $this->dispatcher->getParam('proid');
 
 
 
-
+//save product
 public function saveAction()
 {
         $comment = new Comment();
