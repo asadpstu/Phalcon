@@ -17,7 +17,7 @@ class AccountController extends ControllerBase
 
     public function indexAction()
     {
-            
+            // This is root controller.
 
             //#...Check User already signed in 
             $sessions = $this->getDI()->getShared("session");
@@ -177,7 +177,7 @@ class AccountController extends ControllerBase
     }
 
 
-
+    // User home action after login
     public function userhomeAction()
     {
             
@@ -213,14 +213,14 @@ class AccountController extends ControllerBase
             } 
     }
 
-
+    // Logout function
     public function logoutAction()
     {     
           $this->session->destroy(true);
           return $this->response->redirect("./");
     }
 
-
+    // User profile pic change function
     public function changepicAction()
     {
         // Check if the user has uploaded files
@@ -248,6 +248,7 @@ class AccountController extends ControllerBase
         
     }
 
+	// Profile save with information
     public function profilesaveAction()
     {
         $userid = $this->request->getPost("userid");
