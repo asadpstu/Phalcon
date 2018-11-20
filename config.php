@@ -39,7 +39,7 @@ return new \Phalcon\Config([
             'port' => '465',
             'security' => 'ssl',
             'username' => 'fongbet365@gmail.com',
-            'password' => 'Asad@183099',
+            'password' => '',
         ],
     ],
 
